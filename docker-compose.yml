@@ -9,17 +9,17 @@ services:
     volumes:
       - "./nginx.conf:/etc/nginx/nginx.conf" # <- configuration for nginx
   app1:
-    image: amang385/nodejs-api:0.0.3
+    image: amang385/api:0.0.3
     restart: always
     ports:
       - "8081:3000"
   app2:
-    image: amang385/nodejs-api:0.0.3
+    image: amang385/api:0.0.3
     restart: always
     ports:
       - "8082:3000"
   app3:
-    image: amang385/nodejs-api:0.0.3
+    image: amang385/api:0.0.3
     restart: always
     ports:
       - "8083:3000"
